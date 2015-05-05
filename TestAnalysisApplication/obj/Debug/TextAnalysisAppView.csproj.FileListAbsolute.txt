@@ -1,0 +1,10 @@
+C:\Github\TestAnalysisApplication\TestAnalysisApplication\bin\Debug\TestAnalysisApplication.exe.config
+C:\Github\TestAnalysisApplication\TestAnalysisApplication\obj\Debug\TestAnalysisApplication.exe
+C:\Github\TestAnalysisApplication\TestAnalysisApplication\obj\Debug\TestAnalysisApplication.pdb
+C:\Github\TestAnalysisApplication\TestAnalysisApplication\bin\Debug\TestAnalysisApplication.exe
+C:\Github\TestAnalysisApplication\TestAnalysisApplication\bin\Debug\TestAnalysisApplication.pdb
+C:\Github\TestAnalysisApplication\TestAnalysisApplication\bin\Debug\TextAnalysisAppControl.dll
+C:\Github\TestAnalysisApplication\TestAnalysisApplication\bin\Debug\TextAnalysisAppControl.pdb
+C:\Github\TestAnalysisApplication\TestAnalysisApplication\obj\Debug\TextAnalysisAppView.csprojResolveAssemblyReference.cache
+C:\Github\TestAnalysisApplication\TestAnalysisApplication\obj\Debug\TestAnalysisApplication.Properties.Resources.resources
+C:\Github\TestAnalysisApplication\TestAnalysisApplication\obj\Debug\TextAnalysisAppView.csproj.GenerateResource.Cache

@@ -1,0 +1,7 @@
+C:\Github\TestAnalysisApplication\TextAnalysisAppUnitTest\bin\Debug\TextAnalysisAppUnitTest.dll
+C:\Github\TestAnalysisApplication\TextAnalysisAppUnitTest\bin\Debug\TextAnalysisAppUnitTest.pdb
+C:\Github\TestAnalysisApplication\TextAnalysisAppUnitTest\bin\Debug\TextAnalysisAppControl.dll
+C:\Github\TestAnalysisApplication\TextAnalysisAppUnitTest\bin\Debug\TextAnalysisAppControl.pdb
+C:\Github\TestAnalysisApplication\TextAnalysisAppUnitTest\obj\Debug\TextAnalysisAppUnitTest.csprojResolveAssemblyReference.cache
+C:\Github\TestAnalysisApplication\TextAnalysisAppUnitTest\obj\Debug\TextAnalysisAppUnitTest.dll
+C:\Github\TestAnalysisApplication\TextAnalysisAppUnitTest\obj\Debug\TextAnalysisAppUnitTest.pdb

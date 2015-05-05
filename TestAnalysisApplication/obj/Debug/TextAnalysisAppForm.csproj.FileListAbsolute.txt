@@ -1,0 +1,3 @@
+C:\Github\TestAnalysisApplication\TestAnalysisApplication\bin\Debug\TestAnalysisApplication.exe.config
+C:\Github\TestAnalysisApplication\TestAnalysisApplication\obj\Debug\TestAnalysisApplication.exe
+C:\Github\TestAnalysisApplication\TestAnalysisApplication\obj\Debug\TestAnalysisApplication.pdb
