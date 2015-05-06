@@ -23,11 +23,6 @@ namespace TextAnalysisApp
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         OpenFileDialog openFileDialog = new OpenFileDialog();
 
         private void openFileToolStripMenuItem_Click(object sender, EventArgs e)

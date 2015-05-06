@@ -98,7 +98,6 @@
             this.label1.Size = new System.Drawing.Size(142, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Most Common Words";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
