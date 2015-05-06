@@ -42,7 +42,6 @@ namespace TextAnalysisApp
                 var data = new List<string>();
                 while ((line = streamReader.ReadLine()) != null)
                 {
-                    //richTextBox8.Text += line;//output to test textbox
                     data.AddRange(line.Split(' '));
                 }
                 _textAnalysis = new TextAnalysisControl(data);
@@ -61,7 +60,6 @@ namespace TextAnalysisApp
             richTextBox5.Text = "";
             richTextBox6.Text = "";
             richTextBox7.Text = "";
-            //chart1 = null;
         }
 
         private void TextBoxesInitiation()
@@ -98,35 +96,23 @@ namespace TextAnalysisApp
             chart1.Invalidate();
             chart1.Update();
 
-            //chart1 = new Chart();
-            //((System.ComponentModel.ISupportInitialize)(chart1)).BeginInit();
             chart1.Location = new System.Drawing.Point(43, 506);
             chart1.Name = "chart1";
             chart1.Size = new System.Drawing.Size(1097, 282);
             chart1.TabIndex = 19;
             chart1.Text = "chart1";
-            //ChartArea area1 = new ChartArea();
-            //area1.Name = "area";
             chart1.ChartAreas.Add(new ChartArea());
 
-            //Series words = new Series();
-            //words.ChartType = SeriesChartType.Column;
-            //words.Points.DataBindXY(_textAnalysis.GetWordOccur().Keys , _textAnalysis.GetWordOccur().Values);
-            //words.Name = "Words";
-            //chart1.Series.Add(words);
             chart1.Series.Add(new Series());
             chart1.Series[0].ChartType = SeriesChartType.Column;
             chart1.Series[0].Points.DataBindXY(_textAnalysis.GetWordOccur().Keys, _textAnalysis.GetWordOccur().Values);
             chart1.Series[0].Name = "Words";
 
-            //Legend legend = new Legend();
-            //legend.Name = "legend1";
             chart1.Legends.Add(new Legend());
             chart1.Legends[0].Name = "legend1";
             chart1.Series["Words"].Legend = "legend1";
             chart1.ChartAreas[0].AxisX.LabelStyle.Angle = -90;
             chart1.ChartAreas[0].AxisX.Interval = 1;
-            //((System.ComponentModel.ISupportInitialize)(chart1)).EndInit();
         }
     }
 }

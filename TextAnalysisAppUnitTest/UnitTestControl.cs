@@ -87,5 +87,4 @@ namespace TextAnalysisAppUnitTest
             Console.WriteLine("12A is {0}", isNum);
         }
     }
-
 }

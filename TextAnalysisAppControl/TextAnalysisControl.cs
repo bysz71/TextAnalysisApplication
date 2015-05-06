@@ -66,7 +66,5 @@ namespace TextAnalysisAppControl
             string uniqWords = String.Join(", ", _textAnalysisModel.GetUniqWords());
             return uniqWords;
         }
-
-
     }
 }
