@@ -50,13 +50,22 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="UnitTestControl.cs" />
+    <Compile Include="UnitTestModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\TestAnalysisApplication\TextAnalysisAppView.csproj">
+      <Project>{7403e0aa-69d0-41e5-82d6-f877a26f7e79}</Project>
+      <Name>TextAnalysisAppView</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TextAnalysisAppControl\TextAnalysisAppControl.csproj">
       <Project>{fc4f69bb-3106-47b9-a160-66561f1638bf}</Project>
       <Name>TextAnalysisAppControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TextAnalysisAppModel\TextAnalysisAppModel.csproj">
+      <Project>{2ab4a783-317f-4017-8293-5a4842960e07}</Project>
+      <Name>TextAnalysisAppModel</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

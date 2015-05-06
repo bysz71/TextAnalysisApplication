@@ -1,0 +1,5 @@
+C:\Github\TestAnalysisApplication\TextAnalysisAppModel\bin\Debug\TextAnalysisAppModel.dll
+C:\Github\TestAnalysisApplication\TextAnalysisAppModel\bin\Debug\TextAnalysisAppModel.pdb
+C:\Github\TestAnalysisApplication\TextAnalysisAppModel\obj\Debug\TextAnalysisAppModel.dll
+C:\Github\TestAnalysisApplication\TextAnalysisAppModel\obj\Debug\TextAnalysisAppModel.pdb
+C:\Github\TestAnalysisApplication\TextAnalysisAppModel\obj\Debug\TextAnalysisAppModel.csprojResolveAssemblyReference.cache

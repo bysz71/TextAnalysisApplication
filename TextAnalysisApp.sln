@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextAnalysisAppControl", "T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextAnalysisAppUnitTest", "TextAnalysisAppUnitTest\TextAnalysisAppUnitTest.csproj", "{BA5E81DA-1F14-42C5-A834-183FD7BDBBF2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextAnalysisAppModel", "TextAnalysisAppModel\TextAnalysisAppModel.csproj", "{2AB4A783-317F-4017-8293-5A4842960E07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{BA5E81DA-1F14-42C5-A834-183FD7BDBBF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA5E81DA-1F14-42C5-A834-183FD7BDBBF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA5E81DA-1F14-42C5-A834-183FD7BDBBF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AB4A783-317F-4017-8293-5A4842960E07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AB4A783-317F-4017-8293-5A4842960E07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AB4A783-317F-4017-8293-5A4842960E07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AB4A783-317F-4017-8293-5A4842960E07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -2,3 +2,6 @@ C:\Github\TestAnalysisApplication\TextAnalysisAppControl\bin\Debug\TextAnalysisA
 C:\Github\TestAnalysisApplication\TextAnalysisAppControl\bin\Debug\TextAnalysisAppControl.pdb
 C:\Github\TestAnalysisApplication\TextAnalysisAppControl\obj\Debug\TextAnalysisAppControl.dll
 C:\Github\TestAnalysisApplication\TextAnalysisAppControl\obj\Debug\TextAnalysisAppControl.pdb
+C:\Github\TestAnalysisApplication\TextAnalysisAppControl\obj\Debug\TextAnalysisAppControl.csprojResolveAssemblyReference.cache
+C:\Github\TestAnalysisApplication\TextAnalysisAppControl\bin\Debug\TextAnalysisAppModel.dll
+C:\Github\TestAnalysisApplication\TextAnalysisAppControl\bin\Debug\TextAnalysisAppModel.pdb
