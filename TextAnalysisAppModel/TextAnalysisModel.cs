@@ -8,16 +8,16 @@ namespace TextAnalysisAppModel
 {
     public class TextAnalysisModel
     {
-                private List<string> _rawData;
+        private List<string> _rawData;
         private Dictionary<string, int> _wordOccur;
         private Dictionary<int, SortedSet<string>> _lengthWords;
-        //private SortedSet<string> _uniqWords;
 
-        public TextAnalysisModel(List<string> rawData){
+        public TextAnalysisModel(List<string> rawData)
+        {
             _rawData = new List<string>(rawData);
             _wordOccur = GetWordOccur(_rawData);
             _lengthWords = GetLengthWords(_rawData);
-            
+
         }
 
         public Dictionary<string, int> GetWordOccur()
@@ -25,7 +25,8 @@ namespace TextAnalysisAppModel
             return _wordOccur;
         }
 
-        public static Dictionary<string , int> GetWordOccur(List<string> list){
+        public static Dictionary<string, int> GetWordOccur(List<string> list)
+        {
             Dictionary<string, int> wordOccur = new Dictionary<string, int>();
             for (int i = 0; i < list.Count(); i++)
             {
@@ -40,7 +41,8 @@ namespace TextAnalysisAppModel
         public static Dictionary<int, SortedSet<string>> GetLengthWords(List<string> list)
         {
             Dictionary<int, SortedSet<string>> lengthWords = new Dictionary<int, SortedSet<string>>();
-            foreach(string word in list.Where(word => word !="")){
+            foreach (string word in list.Where(word => word != ""))
+            {
                 if (lengthWords.ContainsKey(word.Length))
                     lengthWords[word.Length].Add(word);
                 else
@@ -50,7 +52,8 @@ namespace TextAnalysisAppModel
         }
 
 
-        public int GetMaxOccur(){
+        public int GetMaxOccur()
+        {
             int maxOccur = _wordOccur.Aggregate((l, r) => l.Value > r.Value ? l : r).Value;
             return maxOccur;
         }

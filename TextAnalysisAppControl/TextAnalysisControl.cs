@@ -24,21 +24,21 @@ namespace TextAnalysisAppControl
         public string GetMostCommonWords()
         {
             int occur = _textAnalysisModel.GetMaxOccur();
-            string mostCommonWords = "Frequency:" + occur + " times.\n" + String.Join(", ",_textAnalysisModel.GetMostCommonWords());
+            string mostCommonWords = "Frequency:" + occur + " times.\n" + String.Join(", ", _textAnalysisModel.GetMostCommonWords());
             return mostCommonWords;
         }
 
         public string GetLongestWords()
         {
             int length = _textAnalysisModel.GetMaxLength();
-            string longestWords = "Longest:" + length + " letters.\n" + String.Join(", ",_textAnalysisModel.GetWordsOfLength(length));
+            string longestWords = "Longest:" + length + " letters.\n" + String.Join(", ", _textAnalysisModel.GetWordsOfLength(length));
             return longestWords;
         }
 
         public string GetShortestWords()
         {
             int length = _textAnalysisModel.GetMinLength();
-            string shortestWords = "Shortest:" + length + " letters.\n" + String.Join(", ",_textAnalysisModel.GetWordsOfLength(length));
+            string shortestWords = "Shortest:" + length + " letters.\n" + String.Join(", ", _textAnalysisModel.GetWordsOfLength(length));
             return shortestWords;
         }
 
@@ -57,7 +57,7 @@ namespace TextAnalysisAppControl
 
         public string GetWordsOfLength(int length)
         {
-            string wordsOfLength = String.Join(", ",_textAnalysisModel.GetWordsOfLength(length));
+            string wordsOfLength = String.Join(", ", _textAnalysisModel.GetWordsOfLength(length));
             return wordsOfLength;
         }
 

@@ -47,7 +47,6 @@ namespace TextAnalysisApp
                 }
                 _textAnalysis = new TextAnalysisControl(data);
 
-
                 TextBoxesInitiation();
                 ChartInitiation();
             }
@@ -72,8 +71,6 @@ namespace TextAnalysisApp
             richTextBox3.Text = _textAnalysis.GetShortestWords();
             richTextBox4.Text = _textAnalysis.GetAverageLength();
             richTextBox7.Text = _textAnalysis.GetUniqWords();
-            
-            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -94,11 +91,13 @@ namespace TextAnalysisApp
             {
                 MessageBox.Show("Invalid input, please input a integer.");
             }
-
         }
 
         public void ChartInitiation()
         {
+            chart1.Invalidate();
+            chart1.Update();
+
             //chart1 = new Chart();
             //((System.ComponentModel.ISupportInitialize)(chart1)).BeginInit();
             chart1.Location = new System.Drawing.Point(43, 506);
@@ -106,24 +105,28 @@ namespace TextAnalysisApp
             chart1.Size = new System.Drawing.Size(1097, 282);
             chart1.TabIndex = 19;
             chart1.Text = "chart1";
-            ChartArea area1 = new ChartArea();
-            area1.Name = "area";
-            chart1.ChartAreas.Add(area1);
-            Series words = new Series();
-            words.ChartType = SeriesChartType.Column;
-            words.Points.DataBindXY(_textAnalysis.GetWordOccur().Keys , _textAnalysis.GetWordOccur().Values);
-            words.Name = "Words";
-            chart1.Series.Add(words);
-            Legend legend = new Legend();
-            legend.Name = "legend1";
-            chart1.Legends.Add(legend);
+            //ChartArea area1 = new ChartArea();
+            //area1.Name = "area";
+            chart1.ChartAreas.Add(new ChartArea());
+
+            //Series words = new Series();
+            //words.ChartType = SeriesChartType.Column;
+            //words.Points.DataBindXY(_textAnalysis.GetWordOccur().Keys , _textAnalysis.GetWordOccur().Values);
+            //words.Name = "Words";
+            //chart1.Series.Add(words);
+            chart1.Series.Add(new Series());
+            chart1.Series[0].ChartType = SeriesChartType.Column;
+            chart1.Series[0].Points.DataBindXY(_textAnalysis.GetWordOccur().Keys, _textAnalysis.GetWordOccur().Values);
+            chart1.Series[0].Name = "Words";
+
+            //Legend legend = new Legend();
+            //legend.Name = "legend1";
+            chart1.Legends.Add(new Legend());
+            chart1.Legends[0].Name = "legend1";
             chart1.Series["Words"].Legend = "legend1";
             chart1.ChartAreas[0].AxisX.LabelStyle.Angle = -90;
             chart1.ChartAreas[0].AxisX.Interval = 1;
             //((System.ComponentModel.ISupportInitialize)(chart1)).EndInit();
         }
-
-        
-
     }
 }

@@ -10,8 +10,9 @@ namespace TextAnalysisAppUnitTest
     public class UnitTestModel
     {
         [TestMethod]
-        public void TestGetWordOccur(){
-            var list = new List<string>(){"aaa","bbb","aaa","ccc","a","asdfasd"};
+        public void TestGetWordOccur()
+        {
+            var list = new List<string>() { "aaa", "bbb", "aaa", "ccc", "a", "asdfasd" };
             var wordOccur = TextAnalysisModel.GetWordOccur(list);
             PrintWordOccur(wordOccur);
         }
@@ -22,12 +23,13 @@ namespace TextAnalysisAppUnitTest
         }
 
         [TestMethod]
-        public void TestGetLengthWord(){
+        public void TestGetLengthWord()
+        {
             var list = new List<string>() { "aaa", "bbb", "aaa", "ccc", "a", "asdfasd" };
             var lengthWords = TextAnalysisModel.GetLengthWords(list);
             PrintLengthWords(lengthWords);
         }
-        public void PrintLengthWords(Dictionary<int,SortedSet<string>> lengthWords)
+        public void PrintLengthWords(Dictionary<int, SortedSet<string>> lengthWords)
         {
             foreach (KeyValuePair<int, SortedSet<string>> kvp in lengthWords)
             {
@@ -55,7 +57,7 @@ namespace TextAnalysisAppUnitTest
             var tam = new TextAnalysisModel(list);
             var mostCommonWords = tam.GetMostCommonWords();
             foreach (string word in mostCommonWords)
-                Console.WriteLine("{0}, ",word);
+                Console.WriteLine("{0}, ", word);
         }
 
         [TestMethod]
@@ -82,7 +84,7 @@ namespace TextAnalysisAppUnitTest
             int length = tam.GetMaxLength();
             var longestWords = tam.GetWordsOfLength(length);
             foreach (string word in longestWords)
-                Console.WriteLine("{0}, ",word);
+                Console.WriteLine("{0}, ", word);
             var words = tam.GetWordsOfLength(4);
             foreach (string word in words)
                 Console.WriteLine("{0}, ", word);
@@ -113,7 +115,7 @@ namespace TextAnalysisAppUnitTest
         {
             var list = new List<string>() { "aaa", "bbb", "aaa", "bbb", "a", "asdfasd" };
             var tam = new TextAnalysisModel(list);
-            string uniqWords = String.Join(", ",tam.GetUniqWords());
+            string uniqWords = String.Join(", ", tam.GetUniqWords());
             Console.WriteLine(uniqWords);
         }
     }

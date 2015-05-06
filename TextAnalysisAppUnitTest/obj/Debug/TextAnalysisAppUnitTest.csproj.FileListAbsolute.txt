@@ -9,3 +9,14 @@ C:\Github\TestAnalysisApplication\TextAnalysisAppUnitTest\bin\Debug\TestAnalysis
 C:\Github\TestAnalysisApplication\TextAnalysisAppUnitTest\bin\Debug\TextAnalysisAppModel.dll
 C:\Github\TestAnalysisApplication\TextAnalysisAppUnitTest\bin\Debug\TestAnalysisApplication.pdb
 C:\Github\TestAnalysisApplication\TextAnalysisAppUnitTest\bin\Debug\TextAnalysisAppModel.pdb
+C:\personal\codes\TestAnalysisApplication\TextAnalysisAppUnitTest\bin\Debug\TextAnalysisAppUnitTest.dll
+C:\personal\codes\TestAnalysisApplication\TextAnalysisAppUnitTest\bin\Debug\TextAnalysisAppUnitTest.pdb
+C:\personal\codes\TestAnalysisApplication\TextAnalysisAppUnitTest\bin\Debug\TestAnalysisApplication.exe
+C:\personal\codes\TestAnalysisApplication\TextAnalysisAppUnitTest\bin\Debug\TextAnalysisAppControl.dll
+C:\personal\codes\TestAnalysisApplication\TextAnalysisAppUnitTest\bin\Debug\TextAnalysisAppModel.dll
+C:\personal\codes\TestAnalysisApplication\TextAnalysisAppUnitTest\bin\Debug\TestAnalysisApplication.pdb
+C:\personal\codes\TestAnalysisApplication\TextAnalysisAppUnitTest\bin\Debug\TextAnalysisAppControl.pdb
+C:\personal\codes\TestAnalysisApplication\TextAnalysisAppUnitTest\bin\Debug\TextAnalysisAppModel.pdb
+C:\personal\codes\TestAnalysisApplication\TextAnalysisAppUnitTest\obj\Debug\TextAnalysisAppUnitTest.csprojResolveAssemblyReference.cache
+C:\personal\codes\TestAnalysisApplication\TextAnalysisAppUnitTest\obj\Debug\TextAnalysisAppUnitTest.dll
+C:\personal\codes\TestAnalysisApplication\TextAnalysisAppUnitTest\obj\Debug\TextAnalysisAppUnitTest.pdb

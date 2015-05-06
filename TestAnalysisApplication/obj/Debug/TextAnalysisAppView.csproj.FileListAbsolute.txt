@@ -11,3 +11,16 @@ C:\Github\TestAnalysisApplication\TestAnalysisApplication\bin\Debug\TextAnalysis
 C:\Github\TestAnalysisApplication\TestAnalysisApplication\bin\Debug\TextAnalysisAppModel.pdb
 C:\Github\TestAnalysisApplication\TestAnalysisApplication\obj\Debug\TextAnalysisApp.FormMain.resources
 C:\Github\TestAnalysisApplication\TestAnalysisApplication\obj\Debug\TextAnalysisApp.Properties.Resources.resources
+C:\personal\codes\TestAnalysisApplication\TestAnalysisApplication\bin\Debug\TestAnalysisApplication.exe.config
+C:\personal\codes\TestAnalysisApplication\TestAnalysisApplication\obj\Debug\TestAnalysisApplication.exe
+C:\personal\codes\TestAnalysisApplication\TestAnalysisApplication\obj\Debug\TestAnalysisApplication.pdb
+C:\personal\codes\TestAnalysisApplication\TestAnalysisApplication\bin\Debug\TestAnalysisApplication.exe
+C:\personal\codes\TestAnalysisApplication\TestAnalysisApplication\bin\Debug\TestAnalysisApplication.pdb
+C:\personal\codes\TestAnalysisApplication\TestAnalysisApplication\bin\Debug\TextAnalysisAppControl.dll
+C:\personal\codes\TestAnalysisApplication\TestAnalysisApplication\bin\Debug\TextAnalysisAppModel.dll
+C:\personal\codes\TestAnalysisApplication\TestAnalysisApplication\bin\Debug\TextAnalysisAppControl.pdb
+C:\personal\codes\TestAnalysisApplication\TestAnalysisApplication\bin\Debug\TextAnalysisAppModel.pdb
+C:\personal\codes\TestAnalysisApplication\TestAnalysisApplication\obj\Debug\TextAnalysisAppView.csprojResolveAssemblyReference.cache
+C:\personal\codes\TestAnalysisApplication\TestAnalysisApplication\obj\Debug\TextAnalysisApp.FormMain.resources
+C:\personal\codes\TestAnalysisApplication\TestAnalysisApplication\obj\Debug\TextAnalysisApp.Properties.Resources.resources
+C:\personal\codes\TestAnalysisApplication\TestAnalysisApplication\obj\Debug\TextAnalysisAppView.csproj.GenerateResource.Cache
