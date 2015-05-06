@@ -11,7 +11,7 @@ namespace TextAnalysisAppUnitTest
         [TestMethod]
         public void TestGetMostCommonWords()
         {
-            var list = new List<string>(){"aaa","bbb","aaa","bbb","aaa","cc","1234","7777777"};
+            var list = new List<string>() { "aaa", "bbb", "aaa", "bbb", "aaa", "cc", "1234", "7777777" };
             var textAnalysisControl = new TextAnalysisControl(list);
             string mostCommonWords = textAnalysisControl.GetMostCommonWords();
             Console.Write(mostCommonWords);
@@ -87,5 +87,4 @@ namespace TextAnalysisAppUnitTest
             Console.WriteLine("12A is {0}", isNum);
         }
     }
-
 }

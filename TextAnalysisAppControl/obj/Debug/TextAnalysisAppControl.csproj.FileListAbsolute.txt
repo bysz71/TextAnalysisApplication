@@ -5,3 +5,10 @@ C:\Github\TestAnalysisApplication\TextAnalysisAppControl\obj\Debug\TextAnalysisA
 C:\Github\TestAnalysisApplication\TextAnalysisAppControl\obj\Debug\TextAnalysisAppControl.csprojResolveAssemblyReference.cache
 C:\Github\TestAnalysisApplication\TextAnalysisAppControl\bin\Debug\TextAnalysisAppModel.dll
 C:\Github\TestAnalysisApplication\TextAnalysisAppControl\bin\Debug\TextAnalysisAppModel.pdb
+C:\personal\codes\TestAnalysisApplication\TextAnalysisAppControl\bin\Debug\TextAnalysisAppControl.dll
+C:\personal\codes\TestAnalysisApplication\TextAnalysisAppControl\bin\Debug\TextAnalysisAppControl.pdb
+C:\personal\codes\TestAnalysisApplication\TextAnalysisAppControl\bin\Debug\TextAnalysisAppModel.dll
+C:\personal\codes\TestAnalysisApplication\TextAnalysisAppControl\bin\Debug\TextAnalysisAppModel.pdb
+C:\personal\codes\TestAnalysisApplication\TextAnalysisAppControl\obj\Debug\TextAnalysisAppControl.csprojResolveAssemblyReference.cache
+C:\personal\codes\TestAnalysisApplication\TextAnalysisAppControl\obj\Debug\TextAnalysisAppControl.dll
+C:\personal\codes\TestAnalysisApplication\TextAnalysisAppControl\obj\Debug\TextAnalysisAppControl.pdb
