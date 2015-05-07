@@ -17,10 +17,12 @@ namespace TextAnalysisApp
     public partial class FormMain : Form
     {
         private TextAnalysisAppControl.TextAnalysisControl _textAnalysis;
+        private bool _loaded;
 
         public FormMain()
         {
             InitializeComponent();
+            _loaded = false;
         }
 
         OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -43,6 +45,7 @@ namespace TextAnalysisApp
 
                 TextBoxesInitiation();
                 ChartInitiation();
+                _loaded = true;
             }
         }
 
@@ -68,21 +71,27 @@ namespace TextAnalysisApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string word = textBoxSearchWord.Text;
-            richTextBoxSearchWord.Text = _textAnalysis.GetOccurOfWord(word);
+            if (_loaded == true)
+            {
+                string word = textBoxSearchWord.Text;
+                richTextBoxSearchWord.Text = _textAnalysis.GetOccurOfWord(word);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             int n;
-            if (int.TryParse(textBoxSearchLength.Text, out n))
+            if (_loaded == true)
             {
-                int length = Convert.ToInt32(textBoxSearchLength.Text);
-                richTextBoxSearchLength.Text = _textAnalysis.GetWordsOfLength(length);
-            }
-            else
-            {
-                MessageBox.Show("Invalid input, please input a integer.");
+                if (int.TryParse(textBoxSearchLength.Text, out n))
+                {
+                    int length = Convert.ToInt32(textBoxSearchLength.Text);
+                    richTextBoxSearchLength.Text = _textAnalysis.GetWordsOfLength(length);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid input, please input a integer.");
+                }
             }
         }
 
@@ -108,6 +117,11 @@ namespace TextAnalysisApp
             chartWordOccur.Series["Words"].Legend = "legend1";
             chartWordOccur.ChartAreas[0].AxisX.LabelStyle.Angle = -90;
             chartWordOccur.ChartAreas[0].AxisX.Interval = 1;
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
