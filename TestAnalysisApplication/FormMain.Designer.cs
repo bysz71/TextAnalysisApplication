@@ -28,34 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            //System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            //System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            //System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.labelMostCommonWords = new System.Windows.Forms.Label();
+            this.labelLongestWords = new System.Windows.Forms.Label();
+            this.labelShortestWords = new System.Windows.Forms.Label();
+            this.labelAverageWordLength = new System.Windows.Forms.Label();
+            this.labelSearchWord = new System.Windows.Forms.Label();
+            this.labelSearchLength = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.richTextBox5 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox6 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox7 = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.richTextBoxMostCommonWords = new System.Windows.Forms.RichTextBox();
+            this.richTextBoxLongestWords = new System.Windows.Forms.RichTextBox();
+            this.richTextBoxShortestWords = new System.Windows.Forms.RichTextBox();
+            this.richTextBoxAverageWordLength = new System.Windows.Forms.RichTextBox();
+            this.textBoxSearchWord = new System.Windows.Forms.TextBox();
+            this.textBoxSearchLength = new System.Windows.Forms.TextBox();
+            this.richTextBoxSearchWord = new System.Windows.Forms.RichTextBox();
+            this.richTextBoxSearchLength = new System.Windows.Forms.RichTextBox();
+            this.richTextBoxUniqWords = new System.Windows.Forms.RichTextBox();
+            this.buttonSearchWord = new System.Windows.Forms.Button();
+            this.buttonSearchLength = new System.Windows.Forms.Button();
+            this.chartWordOccur = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartWordOccur)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -90,59 +87,59 @@
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(147, 24);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
-            // label1
+            // labelMostCommonWords
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(40, 40);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(142, 17);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Most Common Words";
+            this.labelMostCommonWords.AutoSize = true;
+            this.labelMostCommonWords.Location = new System.Drawing.Point(40, 40);
+            this.labelMostCommonWords.Name = "labelMostCommonWords";
+            this.labelMostCommonWords.Size = new System.Drawing.Size(142, 17);
+            this.labelMostCommonWords.TabIndex = 1;
+            this.labelMostCommonWords.Text = "Most Common Words";
             // 
-            // label2
+            // labelLongestWords
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(40, 160);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 17);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Longest Words";
+            this.labelLongestWords.AutoSize = true;
+            this.labelLongestWords.Location = new System.Drawing.Point(40, 160);
+            this.labelLongestWords.Name = "labelLongestWords";
+            this.labelLongestWords.Size = new System.Drawing.Size(104, 17);
+            this.labelLongestWords.TabIndex = 2;
+            this.labelLongestWords.Text = "Longest Words";
             // 
-            // label3
+            // labelShortestWords
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(40, 280);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 17);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Shortest Words";
+            this.labelShortestWords.AutoSize = true;
+            this.labelShortestWords.Location = new System.Drawing.Point(40, 280);
+            this.labelShortestWords.Name = "labelShortestWords";
+            this.labelShortestWords.Size = new System.Drawing.Size(106, 17);
+            this.labelShortestWords.TabIndex = 3;
+            this.labelShortestWords.Text = "Shortest Words";
             // 
-            // label4
+            // labelAverageWordLength
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(40, 400);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(147, 17);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Average Word Length";
+            this.labelAverageWordLength.AutoSize = true;
+            this.labelAverageWordLength.Location = new System.Drawing.Point(40, 400);
+            this.labelAverageWordLength.Name = "labelAverageWordLength";
+            this.labelAverageWordLength.Size = new System.Drawing.Size(147, 17);
+            this.labelAverageWordLength.TabIndex = 4;
+            this.labelAverageWordLength.Text = "Average Word Length";
             // 
-            // label5
+            // labelSearchWord
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(600, 40);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(91, 17);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Search Word";
+            this.labelSearchWord.AutoSize = true;
+            this.labelSearchWord.Location = new System.Drawing.Point(600, 40);
+            this.labelSearchWord.Name = "labelSearchWord";
+            this.labelSearchWord.Size = new System.Drawing.Size(91, 17);
+            this.labelSearchWord.TabIndex = 5;
+            this.labelSearchWord.Text = "Search Word";
             // 
-            // label6
+            // labelSearchLength
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(600, 160);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(101, 17);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Search Length";
+            this.labelSearchLength.AutoSize = true;
+            this.labelSearchLength.Location = new System.Drawing.Point(600, 160);
+            this.labelSearchLength.Name = "labelSearchLength";
+            this.labelSearchLength.Size = new System.Drawing.Size(101, 17);
+            this.labelSearchLength.TabIndex = 6;
+            this.labelSearchLength.Text = "Search Length";
             // 
             // label7
             // 
@@ -153,143 +150,135 @@
             this.label7.TabIndex = 7;
             this.label7.Text = "List Of All Unique Words";
             // 
-            // richTextBox1
+            // richTextBoxMostCommonWords
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(220, 40);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(300, 96);
-            this.richTextBox1.TabIndex = 8;
-            this.richTextBox1.Text = "";
+            this.richTextBoxMostCommonWords.Location = new System.Drawing.Point(220, 40);
+            this.richTextBoxMostCommonWords.Name = "richTextBoxMostCommonWords";
+            this.richTextBoxMostCommonWords.Size = new System.Drawing.Size(300, 96);
+            this.richTextBoxMostCommonWords.TabIndex = 8;
+            this.richTextBoxMostCommonWords.Text = "";
             // 
-            // richTextBox2
+            // richTextBoxLongestWords
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(220, 160);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(300, 96);
-            this.richTextBox2.TabIndex = 9;
-            this.richTextBox2.Text = "";
+            this.richTextBoxLongestWords.Location = new System.Drawing.Point(220, 160);
+            this.richTextBoxLongestWords.Name = "richTextBoxLongestWords";
+            this.richTextBoxLongestWords.Size = new System.Drawing.Size(300, 96);
+            this.richTextBoxLongestWords.TabIndex = 9;
+            this.richTextBoxLongestWords.Text = "";
             // 
-            // richTextBox3
+            // richTextBoxShortestWords
             // 
-            this.richTextBox3.Location = new System.Drawing.Point(220, 280);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(300, 96);
-            this.richTextBox3.TabIndex = 10;
-            this.richTextBox3.Text = "";
+            this.richTextBoxShortestWords.Location = new System.Drawing.Point(220, 280);
+            this.richTextBoxShortestWords.Name = "richTextBoxShortestWords";
+            this.richTextBoxShortestWords.Size = new System.Drawing.Size(300, 96);
+            this.richTextBoxShortestWords.TabIndex = 10;
+            this.richTextBoxShortestWords.Text = "";
             // 
-            // richTextBox4
+            // richTextBoxAverageWordLength
             // 
-            this.richTextBox4.Location = new System.Drawing.Point(220, 400);
-            this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.Size = new System.Drawing.Size(300, 96);
-            this.richTextBox4.TabIndex = 11;
-            this.richTextBox4.Text = "";
+            this.richTextBoxAverageWordLength.Location = new System.Drawing.Point(220, 400);
+            this.richTextBoxAverageWordLength.Name = "richTextBoxAverageWordLength";
+            this.richTextBoxAverageWordLength.Size = new System.Drawing.Size(300, 96);
+            this.richTextBoxAverageWordLength.TabIndex = 11;
+            this.richTextBoxAverageWordLength.Text = "";
             // 
-            // textBox1
+            // textBoxSearchWord
             // 
-            this.textBox1.Location = new System.Drawing.Point(720, 40);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 12;
+            this.textBoxSearchWord.Location = new System.Drawing.Point(720, 40);
+            this.textBoxSearchWord.Name = "textBoxSearchWord";
+            this.textBoxSearchWord.Size = new System.Drawing.Size(100, 22);
+            this.textBoxSearchWord.TabIndex = 12;
             // 
-            // textBox2
+            // textBoxSearchLength
             // 
-            this.textBox2.Location = new System.Drawing.Point(720, 160);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 13;
+            this.textBoxSearchLength.Location = new System.Drawing.Point(720, 160);
+            this.textBoxSearchLength.Name = "textBoxSearchLength";
+            this.textBoxSearchLength.Size = new System.Drawing.Size(100, 22);
+            this.textBoxSearchLength.TabIndex = 13;
             // 
-            // richTextBox5
+            // richTextBoxSearchWord
             // 
-            this.richTextBox5.Location = new System.Drawing.Point(840, 40);
-            this.richTextBox5.Name = "richTextBox5";
-            this.richTextBox5.Size = new System.Drawing.Size(300, 96);
-            this.richTextBox5.TabIndex = 14;
-            this.richTextBox5.Text = "";
+            this.richTextBoxSearchWord.Location = new System.Drawing.Point(840, 40);
+            this.richTextBoxSearchWord.Name = "richTextBoxSearchWord";
+            this.richTextBoxSearchWord.Size = new System.Drawing.Size(300, 96);
+            this.richTextBoxSearchWord.TabIndex = 14;
+            this.richTextBoxSearchWord.Text = "";
             // 
-            // richTextBox6
+            // richTextBoxSearchLength
             // 
-            this.richTextBox6.Location = new System.Drawing.Point(840, 160);
-            this.richTextBox6.Name = "richTextBox6";
-            this.richTextBox6.Size = new System.Drawing.Size(300, 96);
-            this.richTextBox6.TabIndex = 15;
-            this.richTextBox6.Text = "";
+            this.richTextBoxSearchLength.Location = new System.Drawing.Point(840, 160);
+            this.richTextBoxSearchLength.Name = "richTextBoxSearchLength";
+            this.richTextBoxSearchLength.Size = new System.Drawing.Size(300, 96);
+            this.richTextBoxSearchLength.TabIndex = 15;
+            this.richTextBoxSearchLength.Text = "";
             // 
-            // richTextBox7
+            // richTextBoxUniqWords
             // 
-            this.richTextBox7.Location = new System.Drawing.Point(600, 300);
-            this.richTextBox7.Name = "richTextBox7";
-            this.richTextBox7.Size = new System.Drawing.Size(540, 200);
-            this.richTextBox7.TabIndex = 16;
-            this.richTextBox7.Text = "";
+            this.richTextBoxUniqWords.Location = new System.Drawing.Point(600, 300);
+            this.richTextBoxUniqWords.Name = "richTextBoxUniqWords";
+            this.richTextBoxUniqWords.Size = new System.Drawing.Size(540, 200);
+            this.richTextBoxUniqWords.TabIndex = 16;
+            this.richTextBoxUniqWords.Text = "";
             // 
-            // button1
+            // buttonSearchWord
             // 
-            this.button1.Location = new System.Drawing.Point(720, 69);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "Search";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonSearchWord.Location = new System.Drawing.Point(720, 69);
+            this.buttonSearchWord.Name = "buttonSearchWord";
+            this.buttonSearchWord.Size = new System.Drawing.Size(75, 23);
+            this.buttonSearchWord.TabIndex = 17;
+            this.buttonSearchWord.Text = "Search";
+            this.buttonSearchWord.UseVisualStyleBackColor = true;
+            this.buttonSearchWord.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // buttonSearchLength
             // 
-            this.button2.Location = new System.Drawing.Point(720, 189);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 18;
-            this.button2.Text = "Search";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonSearchLength.Location = new System.Drawing.Point(720, 189);
+            this.buttonSearchLength.Name = "buttonSearchLength";
+            this.buttonSearchLength.Size = new System.Drawing.Size(75, 23);
+            this.buttonSearchLength.TabIndex = 18;
+            this.buttonSearchLength.Text = "Search";
+            this.buttonSearchLength.UseVisualStyleBackColor = true;
+            this.buttonSearchLength.Click += new System.EventHandler(this.button2_Click);
             // 
-            // chart1
+            // chartWordOccur
             // 
-            //chartArea1.Name = "ChartArea1";
-            //this.chart1.ChartAreas.Add(chartArea1);
-            //legend1.Name = "Legend1";
-            //this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(43, 506);
-            this.chart1.Name = "chart1";
-            //series1.ChartArea = "ChartArea1";
-            //series1.Legend = "Legend1";
-            //series1.Name = "Series1";
-            //this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(1097, 282);
-            this.chart1.TabIndex = 19;
-            this.chart1.Text = "chart1";
+            this.chartWordOccur.Location = new System.Drawing.Point(43, 506);
+            this.chartWordOccur.Name = "chartWordOccur";
+            this.chartWordOccur.Size = new System.Drawing.Size(1097, 282);
+            this.chartWordOccur.TabIndex = 19;
+            this.chartWordOccur.Text = "chart1";
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 800);
-            this.Controls.Add(this.chart1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.richTextBox7);
-            this.Controls.Add(this.richTextBox6);
-            this.Controls.Add(this.richTextBox5);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.richTextBox4);
-            this.Controls.Add(this.richTextBox3);
-            this.Controls.Add(this.richTextBox2);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.chartWordOccur);
+            this.Controls.Add(this.buttonSearchLength);
+            this.Controls.Add(this.buttonSearchWord);
+            this.Controls.Add(this.richTextBoxUniqWords);
+            this.Controls.Add(this.richTextBoxSearchLength);
+            this.Controls.Add(this.richTextBoxSearchWord);
+            this.Controls.Add(this.textBoxSearchLength);
+            this.Controls.Add(this.textBoxSearchWord);
+            this.Controls.Add(this.richTextBoxAverageWordLength);
+            this.Controls.Add(this.richTextBoxShortestWords);
+            this.Controls.Add(this.richTextBoxLongestWords);
+            this.Controls.Add(this.richTextBoxMostCommonWords);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelSearchLength);
+            this.Controls.Add(this.labelSearchWord);
+            this.Controls.Add(this.labelAverageWordLength);
+            this.Controls.Add(this.labelShortestWords);
+            this.Controls.Add(this.labelLongestWords);
+            this.Controls.Add(this.labelMostCommonWords);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormMain";
             this.Text = "Form1";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartWordOccur)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -301,25 +290,25 @@
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openFileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label labelMostCommonWords;
+        private System.Windows.Forms.Label labelLongestWords;
+        private System.Windows.Forms.Label labelShortestWords;
+        private System.Windows.Forms.Label labelAverageWordLength;
+        private System.Windows.Forms.Label labelSearchWord;
+        private System.Windows.Forms.Label labelSearchLength;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.RichTextBox richTextBox3;
-        private System.Windows.Forms.RichTextBox richTextBox4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.RichTextBox richTextBox5;
-        private System.Windows.Forms.RichTextBox richTextBox6;
-        private System.Windows.Forms.RichTextBox richTextBox7;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.RichTextBox richTextBoxMostCommonWords;
+        private System.Windows.Forms.RichTextBox richTextBoxLongestWords;
+        private System.Windows.Forms.RichTextBox richTextBoxShortestWords;
+        private System.Windows.Forms.RichTextBox richTextBoxAverageWordLength;
+        private System.Windows.Forms.TextBox textBoxSearchWord;
+        private System.Windows.Forms.TextBox textBoxSearchLength;
+        private System.Windows.Forms.RichTextBox richTextBoxSearchWord;
+        private System.Windows.Forms.RichTextBox richTextBoxSearchLength;
+        private System.Windows.Forms.RichTextBox richTextBoxUniqWords;
+        private System.Windows.Forms.Button buttonSearchWord;
+        private System.Windows.Forms.Button buttonSearchLength;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartWordOccur;
     }
 }
 
