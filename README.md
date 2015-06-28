@@ -23,3 +23,4 @@ Points:
 
 Quickshot:
 ----------
+![quickshot](https://github.com/scottszb1987/TextAnalysisApplication/blob/master/shot.PNG?raw=true)
